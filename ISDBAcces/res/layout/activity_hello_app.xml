@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello"
+    android:layout_weight="0.1"
+    android:id="@+id/text1"/>
+
+<EditText
+    android:id="@+id/edit1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <requestFocus></requestFocus>
+</EditText>
+
+<EditText
+	android:id="@+id/edit2"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+</EditText>
+
+<EditText
+    android:id="@+id/edit3"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+</EditText>
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ 	android:text="save"
+ 	android:onClick="doSave"></Button>
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ 	android:text="find"
+ 	android:onClick="doFind"></Button>
+
+<Button
+    android:id="@+id/button3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ 	android:text="delete"
+ 	android:onClick="doDel"></Button>
+</LinearLayout>
